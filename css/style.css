@@ -1255,6 +1255,176 @@ ul {
 
 
 /* End Courses Page */
+/* Start Friends Page */
+.friends-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .friends-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+
+.friends-page .friend .contact {
+    left: 10px;
+    top: 10px;
+}
+
+.friends-page .friend .contact i {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    color: #666;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.friends-page .friend .contact i:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.friends-page .friend img {
+    width: 100px;
+    height: 100px;
+}
+
+.friends-page .friend .icons {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.friends-page .friend .icons i {
+    margin-right: 5px;
+}
+
+.friends-page .friend .icons .vip {
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.2;
+    font-size: 40px;
+}
+
+.friends-page .friend .info a:first-of-type:hover {
+    background-color: var(--blue-alt-color);
+}
+
+.friends-page .friend .info a:last-of-type:hover {
+    background-color: #e24035;
+}
+
+
+
+/* End Friends Page */
+/* Start Files Stats */
+.files-page {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+    .files-page {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.files-page .files-stats {
+    min-width: 260px;
+}
+
+.files-page .files-stats .box .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.files-page .files-stats .blue {
+    background-color: rgb(0 117 255 / 20%);
+}
+
+.files-page .files-stats .green {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+.files-page .files-stats .red {
+    background-color: rgb(244 67 54 / 20%);
+}
+
+.files-page .files-stats .orange {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+.files-page .files-stats .box .info {
+    flex: 1;
+}
+
+.files-page .files-stats a {
+    padding: 10px 15px;
+    margin: 15px auto 0;
+    transition: 0.3s;
+}
+
+.files-page .files-stats a:hover {
+    background-color: var(--blue-alt-color);
+}
+
+.files-page .files-stats a:hover i {
+    animation: up-down .8s infinite;
+}
+
+.files-page .files-container {
+    flex: 1;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.files-page .files-container .file i {
+    transition: 0.4s;
+}
+
+.files-page .files-container .file i:hover {
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+.files-page .files-container img {
+    width: 64px;
+    height: 64px;
+    transition: 0.3s;
+}
+
+.files-page .files-container .file:hover img {
+    transform: rotate(5deg);
+}
+
+
+.files-page .files-container .info {
+    border-top: 1px solid #eee;
+}
+
+
+.files-page .files-container img {
+    width: 64px;
+    height: 64px;
+    transition: 0.3s;
+}
+
+.files-page .files-container .file:hover img {
+    transform: rotate(5deg);
+}
+
+.files-page .files-container .info {
+    border-top: 1px solid #eee;
+}
+
+/* End Files Stats */
 
 
 /* Start Animation */
@@ -1265,6 +1435,19 @@ ul {
 
     to {
         background-color: white;
+    }
+
+}
+
+@keyframes up-down {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
     }
 
 }
