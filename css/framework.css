@@ -20,6 +20,10 @@
     align-items: center;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -130,6 +134,10 @@
 
 .mr-15 {
     margin-right: 15px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
 
 .mb-5 {
